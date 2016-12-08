@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chronus Official Website</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="http://localhost/cafelorem_losningsforslag/favicon.ico" />
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <div id="loader-wrapper">
+
+    <div id="loader"><img src="imgs/logos/ChronusOWhite1.png" alt=""></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!-- Our fixed header navigation -->
+  <div class="navbar navbar-inverse navbar-fixed-top" ng-controller="navController">
+    <div class="container">
+      <div class="navbar-header"><!-- Wrapping the collapse menu in .navbar-header for Bootstrap v.3 -->
+        <a class="page-scroll smoothScroll" href="#page-top">
+          <img class="navbar-brand" src="imgs/logos/Vector2vit2.png" alt="" />
+        </a>
+
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div><!-- /navbar-header -->
+      <div class="collapse collapse navbar-collapse navHeaderCollapse navbar-ex1-collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a class="page-scroll smoothScroll" href="#page-top"></a>
+          </li>
+          <li>
+            <a id="bandNav" class="page-scroll smoothScroll" href="#band">Band</a>
+          </li>
+          <li>
+            <a id="contactNav" class="page-scroll info smoothScroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div><!-- /container -->
+  </div><!-- /navbar div -->
+
+  <div class="main">
+    <!-- each <section> is position: relative; -->
+    <section id="home">
+      <div class="container">
+        <img class="musicImg" src="imgs/album/AVARICE-chronus2-fixed.jpg" alt="">
+
+        <h1>&quot;Avarice&quot; single out <strong>December 17th</strong></h1>
+        <p class="">available on all platforms.</p>
+        <div class="karin2">
+          <a target="_blank" href="https://www.facebook.com/chronusband"><img class="img-responsive social2" src="imgs/logos/FB-f-Logo__white_1024.png" alt="fblogo" /></a>
+          <a target="_blank" href="https://www.youtube.com/user/Chronusband/"><img class="img-responsive social2" src="imgs/logos/YouTube_light_color_icon.png" alt="ytlogo" /></a>
+          <a target="_blank" href="https://www.instagram.com/chronusband/"><img class="img-responsive social2" src="imgs/logos/glyph-logo_May2016.png" alt="iglogo" /></a>
+          <a target="_blank" href="https://twitter.com/ChronusOfficial"><img class="img-responsive social2" src="imgs/logos/Twitter_Social_Icon_White.png" alt="twlogo" /></a>
+          <a target="_blank" href="https://www.spotify.com/"><img class="img-responsive social2" src="imgs/logos/Spotify_Icon_RGB_White.png" alt="splogo" /></a>
+        </div>
+      </div>
+      <a href="#band" class="btn btn-default page-scroll smoothScroll" role="button">Continue</a>
+    </section>
+
+    <section id="band">
+      <div class="container">
+        <h1>Band</h1>
+        <div id="myCarousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="imgs/band/IMG_0349_80.jpg" alt="bandpic1" class="img-responsive">
+            </div>
+            <div class="item">
+              <img src="imgs/band/IMG_0295_80_bw.jpg" alt="bandpic1" class="img-responsive">
+            </div>
+            <!-- <div class="item">
+              <img src="imgs/band/IMG_0425_80_bw.jpg" alt="bandpic1" class="img-responsive">
+            </div> -->
+          </div>
+          <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+          </a>
+          <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <img class="musicImgBand img-responsive" src="imgs/album/AVARICE-chronus2-fixed.jpg" alt="">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <p class="latoSmall alignLeft">The Swedish heavy rock/metal band Chronus, delivers a persuading live performance with a myriad of hit melodies, dark melancholic parts and intense upbeat riffs.</p>
+          <p class="latoSmall alignLeft band-a">With the release of the debut single &quot;Avarice&quot; on <strong>December 17th 2016</strong> we hereby officially announce the release of the all new self-titled album on <strong>January 17th 2017</strong>.</p>
+          <br>
+        </div>
+        <!-- <img class="musicImg" src="imgs/album/AVARICE-chronus2-fixed.jpg" alt="">
+
+        <h1></h1><p class="bandImg">available on all platforms.</p> -->
+        <div class="karin2">
+          <a target="_blank" href="https://www.facebook.com/"><img class="img-responsive social2" src="imgs/logos/FB-f-Logo__white_1024.png" alt="fblogo" /></a>
+          <a target="_blank" href="https://www.youtube.com/user/"><img class="img-responsive social2" src="imgs/logos/YouTube_light_color_icon.png" alt="ytlogo" /></a>
+          <a target="_blank" href="https://www.instagram.com/"><img class="img-responsive social2" src="imgs/logos/glyph-logo_May2016.png" alt="iglogo" /></a>
+          <a target="_blank" href="https://twitter.com/"><img class="img-responsive social2" src="imgs/logos/Twitter_Social_Icon_White.png" alt="twlogo" /></a>
+          <a target="_blank" href="https://www.sporify.com/"><img class="img-responsive social2" src="imgs/logos/Spotify_Icon_RGB_White.png" alt="splogo" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+        <div class="container page-container black2">
+          <h1 class="partialHeader"><img src="imgs/logos/Vector2vit2.png" class="contactLogo" alt="">Contact</h1>
+          <hr>
+          <div class="row rowPost">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <p class="lato">For booking, management, endorsement, interviews, merchandise, and artwork related questions and/or proposals, <strong>please use the e-mail address below.</strong></p>
+              <h2 class="chronusEmail">chronusband@gmail.com</h2>
+
+            </div><!-- /col -->
+          </div><!-- /row & rowPost -->
+          <hr>
+          <footer>
+            <p>&copy; 2016 Chronus</p>
+          </footer>
+        </div><!-- /container & page-container -->
+    </section>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
+  <!-- <script src="scripts/jquery.easing.min.js"></script> -->
+  <!-- <script src="scripts/scrolling-nav.js"></script> -->
+  <script src="scripts/smoothscroll.js"></script>
+
+</body>
+</html>
