@@ -1,0 +1,503 @@
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Averia+Sans+Libre|Covered+By+Your+Grace|Julius+Sans+One|Lato|Luckiest+Guy';
+/*
+  CSS3
+
+  Here we use some exciting new units:
+  vh - viewport height
+  vw - viewport width
+  vmax - which ever is the biggest - vh or vw
+  vmin - which ever is the smallest - vh or vw
+
+  We also scale our backgrounds using
+  background-size: cover;
+  This ensures us that the image will always cover the whole object
+
+*/
+
+/*basic text properties for the entire page*/
+body {
+  font-size: 3vmin;
+  color:#eee;
+  font-family: 'Julius Sans One', sans-serif;
+
+}
+h1 {
+  font-size: 5vmin;
+}
+footer p {
+  font-size: 14px;
+}
+/*which means we need a clearfix*/
+.clearFix {
+  clear: both;
+}
+.homelogo {
+  display: inline-block;
+  width: 60vmin;
+  margin-left: -12px;
+}
+.musicImg {
+  margin-top: 2vmin;
+  display: inline-block;
+  width: 50vmin;
+}
+.musicImgBand {
+  display: inline-block;
+  width: 30vmin;
+  margin-bottom: 20px;
+}
+.bandImg {
+  width: 300px;
+  display: inline-block;
+}
+.arrow, .arrow:hover, .arrow:focus {
+  text-decoration: none;
+  font-size: 70px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*general style for each section*/
+div.main section {
+  height:100vh;
+  text-align: center;
+  padding-top: 50px;
+  /*
+    notice how we set all background properties here except
+    for background-image, which is unique to each <section> tag
+  */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*
+    section is the position: relative; parent of the
+    position: absolute; <div> that contains our text elements
+  */
+  position:relative;
+}
+
+/*the last <section> tag should not have a border*/
+div.main section:last-child {
+  /*border-bottom:0;*/
+}
+
+/*
+  all <div> tags that are direct children of <section>
+  should be position: absolute; and since this example
+  use them as wrappers for the text they will all have
+  the same left & right attribute values.
+*/
+div.main section > div {
+
+  /*bottom:30vh;
+
+    instead of setting a width on the div we determine its size
+    by using both left & right attributes. it's being "squished"
+    from both sides so to speak
+
+  left:30vw;
+  right:30vw;*/
+}
+#bandNav,
+#contactNav {
+  font-size: 2.5vmin;
+  padding-top: 15px;
+}
+.nav {
+  font-family: 'Julius Sans One', sans-serif;
+}
+.navbar-inverse {
+  background-color: #000;
+}
+.navbar-fixed-top {
+  z-index: 500;
+}
+.navbar-brand {
+  height: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.social {
+  width: 6vmin;
+  padding-left: 15px;
+  display: inline-block;
+}
+.social2 {
+  width: 6vmin;
+  padding-left: 15px;
+  padding-right: 5px;
+  display: inline-block;
+}
+.karin2 {
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+}
+.btn-default {
+  margin-top: 3vmin;
+  font-family: 'Julius Sans One', sans-serif;
+  width: 40vmin;
+  font-size: 4vmin;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 10vmin;
+}
+.btn-default:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+.btn-default:focus {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  background-color: #666;
+}
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+.latoSmall {
+  font-family: 'Lato', sans-serif;
+  font-size: 2vmin;
+  font-weight: 100;
+}
+.carousel-inner {
+  height: 40vmin;
+}
+.alignLeft {
+  text-align: left;
+}
+.chronusEmail {
+  font-size: 5vmin;
+}
+/*
+  the only thing that is unique about each <section> is its
+  background-image, so we use their ids to assign each image
+*/
+#home {
+  background-image: url(../imgs/Anfal_ShamsudeenRedone_50.jpg);
+  background-position: center bottom;
+}
+
+#band {
+  background-color: #000;
+  background-image: url(../imgs/pexels-photo-14676_90_4.png);
+  background-position: center bottom;
+}
+#myCarousel {
+  margin-bottom: 25px;
+}
+.band-a{
+  margin-top: 20px;
+}
+#contact {
+  background-image: url(../imgs/pexels-photo-11968550Redone_50_2.jpg);
+  background-position: center bottom;
+  padding-top: 28vmin;
+}
+.contactLogo {
+  height: 15vmin;
+}
+
+/*media queries to improve experience on smaller devices*/
+@media (max-width: 767px) {
+  #band {
+    height: 165vmin;
+  }
+  #band p {
+    font-size: 3vmin;
+  }
+  .musicImgBand {
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  #band p {
+    font-size: 3vmin;
+  }
+  #band {
+    height: 160vmin;
+  }
+}
+@media (max-width: 554px) {
+  body {
+    font-size: 5vmin;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  #band {
+    height: 190vmin;
+  }
+  #band p {
+    font-size: 4vmin;
+  }
+  .band-a {
+
+  }
+
+  #bandNav, #contactNav {
+    font-size: 4vmin;
+  }
+  .karin {
+    margin-top: 10px;
+  }
+  .karin2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .social {
+    width: 7vmin;
+    padding-left: 20px;
+    display: inline-block;
+  }
+  .social2 {
+    width: 9vmin;
+    padding-left: 10px;
+    display: inline-block;
+  }
+  .musicImg {
+    display: inline-block;
+    width: 50vmin;
+    margin-top: 5vmin
+  }
+  .btn-default {
+    width: 50vmin;
+
+    font-size: 5vmin;
+
+  }
+}
+@media (max-width: 554px) and (max-height: 596px) {
+  .musicImg {
+    width: 30vmin;
+  }
+}
+@media (max-width: 450px) {
+  #contact {
+    padding-top: 40vmin;
+  }
+  #band {
+    height: 190vmin;
+  }
+}
+
+@media (max-width: 400px) {
+  .musicImg {
+    display: inline-block;
+    width: 45vmin;
+    margin-top: 5vmin
+  }
+  #band p {
+    font-size: 5vmin;
+  }
+  #band {
+    height: 220vmin;
+  }
+}
+@media (max-width: 366px) {
+  #band {
+    height: 230vmin;
+  }
+}
+@media (max-height: 550px) {
+  #contact {
+    padding-top: 20vmin;
+  }
+}
+@media (max-height: 492px) {
+  .karin2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .btn-default {
+    margin-top: 10px;
+  }
+  .social2 {
+    width: 10vmin;
+    padding-left: 10px;
+  }
+  .musicImg {
+    width: 40vmin;
+  }
+  .musicImgBand {
+    width: 20vmin;
+  }
+  #myCarousel {
+    padding-top: 0px;
+  }
+  .band-a {
+    margin-top: 0px;
+  }
+  #contact {
+    padding-top: 15vmin;
+  }
+  hr {
+    padding-bottom: 2px;
+    margin: 0px;
+  }
+}
+@media (max-height: 432px) {
+  .musicImg {
+    width: 20vmin;
+  }
+  .musicImgBand {
+    width: 20vmin;
+  }
+  .carousel-inner {
+    height: 30vmin;
+  }
+  #contact {
+    padding-top: 18vmin;
+  }
+}
+@media (max-height: 333px) {
+  h1 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  #home p {
+    font-size: 12px;
+  }
+}
+@media (max-height: 220px) {
+  hr {
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
+  #contact {
+    padding-top: 18vmin;
+  }
+}
+.loadlogo {
+  z-index: 2000;
+}
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  /*border: 5px solid transparent;*/
+  /*border-top-color: #555;*/
+  z-index: 1500;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+#loader img {
+  width: 100%;
+  height: 100%;
+}
+/*#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #777;
+    -webkit-animation: spin 3s linear infinite;
+      animation: spin 3s linear infinite;
+}
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #999;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}*/
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);  /* IE 9 */
+    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);  /* IE 9 */
+    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(0deg);  /* IE 9 */
+    transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+    -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: rotate(360deg);  /* IE 9 */
+    transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #000;
+  z-index: 1000;
+}
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+/******LOADED STYLES******/
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(-100%);  /* IE 9 */
+  transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+  -webkit-transition: all 1.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+  transition: all 1.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000) /*Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ */
+}
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateX(100%);  /* IE 9 */
+  transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+  -webkit-transition: all 1.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+  transition: all 1.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000) /*Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ */
+}
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+  transition: all 0.3s ease-out /*Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ */
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100&);  /* Chrome, Opera 15+, Safari 3.1+ */
+  -ms-transform: translateY(-100&);  /* IE 9 */
+  transform: translateY(-100&);  /* Firefox 16+, IE 10+, Opera */
+  -webkit-transition: all 0.3s 1s ease-out; /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6 */
+  transition: all 0.3s 1s ease-out /*Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+ */
+
+}
